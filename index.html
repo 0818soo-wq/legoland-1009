@@ -148,6 +148,21 @@ details.nz[open] summary::before{transform:rotate(45deg)}
 details.nz .st{flex:1}
 details.nz .cnt{font-weight:500;font-size:12.5px;color:var(--muted)}
 details.nz .nl{padding:2px 12px 14px}
+
+.meal{margin:10px 0 0;border:1px solid var(--line);border-left:5px solid var(--z);border-radius:8px;background:var(--bg)}
+.meal summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:1fr auto;gap:2px 8px;padding:10px 12px;min-height:48px;align-items:center}
+.meal summary::-webkit-details-marker{display:none}
+.meal .mn{font-weight:700;font-size:15px;grid-column:1;line-height:1.35}
+.meal .mt{grid-column:2;grid-row:1;font-size:12px;font-weight:700;color:#fff;background:var(--z);border-radius:999px;padding:2px 9px;white-space:nowrap}
+.meal .mr{grid-column:1/-1;font-size:12.5px;color:var(--muted)}
+.meal summary:focus-visible{outline:3px solid var(--yellow);outline-offset:2px}
+.meal .mb{padding:0 12px 12px}
+.meal .mz{margin:0 0 6px;font-size:13px;color:var(--muted)}
+.meal .mg{margin:10px 0 4px;font-size:13px;font-weight:700;color:var(--z)}
+.meal .mi{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.meal .mi li{display:flex;justify-content:space-between;gap:12px;font-size:14px;line-height:1.4}
+.meal .mi b{font-weight:700;white-space:nowrap;text-align:right;font-variant-numeric:tabular-nums}
+.mnote{font-size:12.5px;color:var(--muted);margin:8px 0 0}
 @media (prefers-reduced-motion: reduce){.bar b{transition:none}}
 </style>
 </head>
@@ -239,7 +254,7 @@ details.nz .nl{padding:2px 12px 14px}
 
   <li class="stop" style="--z:var(--ninjago)">
     <div class="brick">11:30</div>
-    <div><h3>조기 점심</h3><p>닌자고 구역 식당에서 피크 전에 먹습니다.</p></div>
+    <div><h3>조기 점심 · 후보 3곳</h3><p>피크 전에 먹습니다. 가까운 순서로 골라 보세요.</p><details class="meal" open><summary><span class="mn">후보 1 · 웍 앤 볼 (Wok ‘N’ Bowl)</span><span class="mt">가장 가까움</span><span class="mr">식사 13,900원~</span></summary><div class="mb"><p class="mz">레고 닌자고 월드 · 지도 번호 32</p><p class="mg">메인</p><ul class="mi"><li><span>우삼겹 짬뽕</span><b>13,900원</b></li><li><span>짜장면과 튀김만두</span><b>13,900원</b></li></ul><p class="mg">스낵</p><ul class="mi"><li><span>구슬 유자 탕수육</span><b>6,500원</b></li><li><span>튀김만두</span><b>6,500원</b></li></ul><p class="mg">음료</p><ul class="mi"><li><span>생수</span><b>1,600원</b></li><li><span>탄산음료</span><b>3,300원</b></li><li><span>병음료 (토레타·미닛메이드)</span><b>3,500원</b></li></ul></div></details><details class="meal"><summary><span class="mn">후보 2 · 나이츠 피스트 (Knight’s Feast)</span><span class="mt">조금 멂</span><span class="mr">식사 15,500원~</span></summary><div class="mb"><p class="mz">레고 캐슬 · 지도 번호 29</p><p class="mg">식사 (신메뉴)</p><ul class="mi"><li><span>쉐이크 콤보 비프/치킨/더블 비프</span><b>16,500 / 15,500 / 19,500원</b></li><li><span>쉐이크 세트 비프/치킨/더블 비프</span><b>21,000 / 20,000 / 24,000원</b></li></ul><p class="mg">음료</p><ul class="mi"><li><span>탄산음료 무제한 리필</span><b>3,300원</b></li><li><span>병음료</span><b>3,500원</b></li><li><span>생수 500ml</span><b>1,600원</b></li><li><span>밀크쉐이크 / 쿠앤크 쉐이크</span><b>6,500원</b></li></ul><p class="mg">커피 (핫 / 아이스)</p><ul class="mi"><li><span>아메리카노</span><b>5,000 / 5,500원</b></li><li><span>라떼</span><b>5,500 / 6,000원</b></li><li><span>초콜릿 밀크</span><b>5,500 / 6,000원</b></li></ul><p class="mg">아이스크림</p><ul class="mi"><li><span>엑스칼리버 츄러스 선데이</span><b>9,500원</b></li><li><span>아이스크림 선데이 (플레인·초콜릿·딸기)</span><b>4,500원</b></li></ul></div></details><details class="meal"><summary><span class="mn">후보 3 · 시티 레스토랑</span><span class="mt">가장 멂</span><span class="mr">식사 12,900원~</span></summary><div class="mb"><p class="mz">레고 시티 · 지도 번호 51</p><p class="mg">코너 1</p><ul class="mi"><li><span>통 등심 돈가스와 양송이 스프</span><b>14,900원</b></li><li><span>통 등심 돈가스 카레라이스와 유린기 군만두</span><b>16,900원</b></li><li><span>양송이 스프 (단품)</span><b>4,500원</b></li></ul><p class="mg">코너 2</p><ul class="mi"><li><span>눈꽃 치즈 치킨 떡볶이와 빅 소시지</span><b>15,900원</b></li><li><span>빅 소시지 (단품)</span><b>4,900원</b></li></ul><p class="mg">코너 3</p><ul class="mi"><li><span>청귤 모밀과 새우튀김</span><b>13,900원</b></li></ul><p class="mg">코너 4</p><ul class="mi"><li><span>짜장면과 군만두</span><b>12,900원</b></li><li><span>우거지 해장국과 유린기 소스 군만두</span><b>13,400원</b></li><li><span>소떡소떡</span><b>5,500원</b></li><li><span>점보 닭다리 구이</span><b>9,900원</b></li></ul></div></details><p class="mnote">메뉴판 사진 기준이며 가격과 메뉴는 현장 사정에 따라 바뀔 수 있어요. 시티 레스토랑은 코너별로 주문합니다.</p></div>
   </li>
 
   <li class="stop" style="--z:var(--pirate)">
